@@ -986,7 +986,7 @@ adin_cut(int (*ad_process)(SP16 *, int, Recog *), int (*ad_check)(Recog *), Reco
   }
 
 break_input:
-
+   jlog("already read %.2f sec.\n", (float) a->last_trigger_sample / 16000);
   /****************/
   /* pause input */
   /****************/
